@@ -32,7 +32,7 @@ input {
 
 form {
   padding: 3rem 2rem;
-  min-width: 300px;
+  max-width: 50%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   font-size: 1.32rem;
   text-transform: uppercase;
@@ -87,7 +87,7 @@ input::placeholder {
 .select-sect {
   display: flex;
   width: 100%;
-  /* background: red; */
+
   justify-content: space-between;
   align-items: center;
   margin-top: 0.7rem;
@@ -95,7 +95,7 @@ input::placeholder {
 
 .form-expiration-date select {
   border: none;
-  background: #fffefee3;
+  background: #e6e4e4f2;
   border-radius: 5px;
   outline: none;
   padding: 0.5rem;
@@ -157,8 +157,9 @@ input::placeholder {
   }
 }
 
-@media (min-width: 700px) {
+@media (max-width: 700px) {
   .form {
-    width: 87%;
+    max-width: 85%;
+    min-width: 300px;
   }
 }
