@@ -23,6 +23,7 @@ body {
   font-family: "Open Sans", sans-serif;
   flex-direction: column;
   color: #000;
+  /* background: #f5deb3; */
 }
 
 input {
@@ -31,6 +32,7 @@ input {
 
 form {
   padding: 3rem 2rem;
+  width: 90%;
   min-width: 300px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   font-size: 1.32rem;
@@ -38,7 +40,7 @@ form {
   font-weight: 700;
   letter-spacing: 0.05rem;
   border-radius: 5px;
-  /* background: red; */
+  background: white;
 }
 
 .form-header {
@@ -94,7 +96,7 @@ input::placeholder {
 
 .form-expiration-date select {
   border: none;
-  background: #e6e4e4e3;
+  background: #fffefee3;
   border-radius: 5px;
   outline: none;
   padding: 0.5rem;
@@ -110,7 +112,7 @@ input::placeholder {
   color: #fff;
   font-weight: inherit;
   text-transform: uppercase;
-  margin-top: 1.5rem;
+  margin: 1.5rem 0;
   border-radius: 5px;
   white-space: nowrap;
   cursor: pointer;
@@ -120,21 +122,6 @@ input::placeholder {
 .form-button:hover {
   background: linear-gradient(135deg, #243a85, #23357d, #222862, #222863);
   transform: scale(1.03);
-}
-
-@media (min-width: 100px) {
-  .card-num-cvc {
-    display: flex;
-    gap: 2.3rem;
-  }
-
-  .form-card-num {
-    width: 70%;
-  }
-
-  .form-cvc {
-    width: 30%;
-  }
 }
 
 #popup-card {
@@ -154,4 +141,25 @@ input::placeholder {
 }
 .showCard {
   display: block;
+}
+
+@media (min-width: 100px) {
+  .card-num-cvc {
+    display: flex;
+    gap: 2.3rem;
+  }
+
+  .form-card-num {
+    width: 70%;
+  }
+
+  .form-cvc {
+    width: 30%;
+  }
+}
+
+@media (min-width: 700px) {
+  .form {
+    width: 87%;
+  }
 }
