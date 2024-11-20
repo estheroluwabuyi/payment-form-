@@ -32,9 +32,9 @@ input {
 
 form {
   padding: 3rem 2rem;
-  max-width: 50%;
+  min-width: 300px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  font-size: 1.32rem;
+  font-size: 1.12rem;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.05rem;
@@ -87,7 +87,6 @@ input::placeholder {
 .select-sect {
   display: flex;
   width: 100%;
-
   justify-content: space-between;
   align-items: center;
   margin-top: 0.7rem;
@@ -142,7 +141,7 @@ input::placeholder {
   display: block;
 }
 
-@media (min-width: 100px) {
+@media (min-width: 200px) {
   .card-num-cvc {
     display: flex;
     gap: 2.3rem;
@@ -159,7 +158,6 @@ input::placeholder {
 
 @media (max-width: 700px) {
   .form {
-    max-width: 85%;
-    min-width: 300px;
+    width: 85%;
   }
 }
