@@ -9,7 +9,7 @@
 }
 
 html {
-  font-size: 66.5%;
+  font-size: 63.5%;
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -158,6 +158,6 @@ input::placeholder {
 
 @media (max-width: 700px) {
   .form {
-    width: 85%;
+    width: 90%;
   }
 }
