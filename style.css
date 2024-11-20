@@ -143,9 +143,10 @@ input::placeholder {
   border-radius: 8px;
   box-shadow: #222862 0px 1px 4px, #23357d 0px 0px 0px 3px;
   font-size: 2.5rem;
-  width: 80%;
+  width: 85%;
   line-height: 1.7;
   text-align: center;
+  font-weight: 700;
 }
 
 .hideForm {
