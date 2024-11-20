@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content="IE=edge" />
+
+    <!---------------SCRIPT JS-------------------->
+    <script defer src="./script.js"></script>
+
+    <!-- PRIMARY META TAGS -->
+    <title>VISA</title>
+    <meta name="title" content="VISA" />
+    <meta name="description" content="" />
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="" type="image/svg+xml" />
+  </head>
+
+  <body>
+    <form class="form">
+      <section class="form-header">
+        <img src="./img/visa.png" alt="visa png" width="100" height="100" />
+      </section>
+
+      <section class="form-content">
+        <div class="form-order">
+          <label for="order-input">Order</label>
+          <input
+            type="text"
+            id="order-input"
+            class="input"
+            placeholder="250"
+            autocomplete="off"
+            required
+          />
+        </div>
+
+        <section class="card-num-cvc">
+          <div class="form-card-num">
+            <label for="card-num-input">Card Number</label>
+            <input
+              type="text"
+              id="card-num-input"
+              class="input"
+              maxlength="19"
+              placeholder="1234 5678 9012 3456"
+              required
+            />
+          </div>
+
+          <div class="form-cvc">
+            <label for="cvc-input">CVC</label>
+            <input
+              type="text"
+              id="cvc-input"
+              class="input"
+              placeholder="456"
+              maxlength="3"
+              required
+            />
+          </div>
+        </section>
+
+        <div class="form-holder-name">
+          <label for="holder-name">Card holder name</label>
+          <input
+            type="text"
+            id="holder-name"
+            class="input"
+            placeholder="Morgan Blake"
+            required
+          />
+        </div>
+
+        <section class="form-expiration-date">
+          <div>Expiration date</div>
+
+          <div class="select-sect">
+            <select id="day"></select>
+            <select id="month"></select>
+            <select id="year"></select>
+          </div>
+        </section>
+
+        <button type="submit" class="form-button">
+          complete Order (Total $<span id="amount">0</span>)
+        </button>
+      </section>
+    </form>
+
+    <div id="popup-card" class="hideForm">
+      <p>Thank you for your submission! We'll notify you shortly</p>
+    </div>
+  </body>
+</html>

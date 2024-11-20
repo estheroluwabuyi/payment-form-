@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 66.5%;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  flex-direction: column;
+  color: #000;
+}
+
+input {
+  display: block;
+}
+
+form {
+  padding: 3rem 2rem;
+  min-width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-size: 1.32rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  border-radius: 5px;
+  /* background: red; */
+}
+
+.form-header {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-header img {
+  width: 100px;
+  height: auto;
+}
+
+.input {
+  width: 100%;
+  height: 4rem;
+  margin-top: 0.7rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  background: #e6e4e4f2;
+  border-radius: 5px;
+  padding: 1.7rem;
+  text-transform: capitalize;
+  outline: none;
+  transition: background 700ms ease;
+  font-family: inherit;
+}
+
+.input:focus {
+  background: #d0cece;
+}
+
+input::placeholder {
+  opacity: 0.5;
+}
+
+.form-expiration-date {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.select-sect {
+  display: flex;
+  width: 100%;
+  /* background: red; */
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.7rem;
+}
+
+.form-expiration-date select {
+  border: none;
+  background: #e6e4e4e3;
+  border-radius: 5px;
+  outline: none;
+  padding: 0.5rem;
+}
+
+.form-button {
+  background: linear-gradient(135deg, #222862, #222863, #243a85, #23357d);
+  width: 100%;
+  padding: 1.3rem;
+  font-size: inherit;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-weight: inherit;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+  border-radius: 5px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 700ms ease, transform 700ms ease;
+}
+
+.form-button:hover {
+  background: linear-gradient(135deg, #243a85, #23357d, #222862, #222863);
+  transform: scale(1.03);
+}
+
+@media (min-width: 100px) {
+  .card-num-cvc {
+    display: flex;
+    gap: 2.3rem;
+  }
+
+  .form-card-num {
+    width: 70%;
+  }
+
+  .form-cvc {
+    width: 30%;
+  }
+}
+
+#popup-card {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: #222862 0px 1px 4px, #23357d 0px 0px 0px 3px;
+  font-size: 2.5rem;
+  width: 80%;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.hideForm {
+  display: none;
+}
+.showCard {
+  display: block;
+}
